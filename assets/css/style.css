@@ -1,3 +1,13 @@
+.card-header {
+  background: none;
+  border: none;
+}
+.card {
+  border: none;
+}
+.card-link {
+  outline: none;
+}
 .elementContainer {
   display: flex;
   flex-direction: row;
@@ -24,9 +34,24 @@ p {
 .articleAmount {
   width: 4rem;
 }
+.dot{
+  height: 1rem;
+  width: 1rem;
+  background-color: #888;
+  border-radius: 50%;
+  margin: 1rem;
+}
+.dot:hover{
+  background-color: #fff;
+}
 @media screen and (max-width: 680px) {
   .elementContainer {
     display: flex;
     flex-direction: column;
+  }
+  .elementImage {
+    width: 6rem;
+    margin: auto;
+    margin-bottom: 1rem;
   }
 }
