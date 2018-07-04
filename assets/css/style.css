@@ -1,3 +1,32 @@
-img {
-  height: 10rem;
+.elementContainer {
+  display: flex;
+  flex-direction: row;
+}
+.elementImage {
+  width: 6rem;
+}
+.elementDescription {
+  flex: 60%;
+}
+.elementPrice {
+  flex: 25%;
+}
+h3 {
+  padding-left: 1rem;
+}
+p {
+  line-height: 1.4rem;
+}
+.elementPrice img {
+  height: 1.8rem;
+  padding-left: 0.5rem;
+}
+.articleAmount {
+  width: 4rem;
+}
+@media screen and (max-width: 680px) {
+  .elementContainer {
+    display: flex;
+    flex-direction: column;
+  }
 }
