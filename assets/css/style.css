@@ -1,5 +1,6 @@
 body {
   background-image: url('');
+  background-color:rgba(237,168,99,0.3);
 }
 .carouselImage {
   width: 100%;
