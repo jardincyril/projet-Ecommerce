@@ -7,45 +7,49 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
   <script src="assets/js/jquery-3.2.1.js"></script>
   <script src="assets/js/script.js"></script>
   <link rel="stylesheet" href="assets/css/style.css" />
-  <title>E-commerce Projet</title>
+  <title>The Book Of Bookcase</title>
 </head>
 <body>
   <div class="container-fluid w-75">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item active">
-                <a class="navbar-brand" href="#">Nom du site</a>
-              </li>
-              <li class="nav-item active">
-                <a class="nav-link" href="#ref">Bandes Dessinées</a>
-              </li>
-              <li class="nav-item active">
-                <a class="nav-link" href="#test2">Manga</a>
-              </li>
-              <li class="nav-item active">
-                <a class="nav-link" href="#test3">Sciences-Fiction</a>
-              </li>
-              <li class="nav-item active">
-                <a class="nav-link" href="#test4">Romans</a>
-              </li>
-              <li class="nav-item active">
-                <a class="nav-link" href="#test5">Ebooks</a>
-              </li>
-              <li class="nav-item active">
-                <a class="nav-link" href="#test6">Cuisine</a>
-              </li>
-            </ul>
-            <form class="form-inline my-2 my-lg-0">
-              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-          </div>
-        </nav>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Disabled</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
     <!--carousel-->
     <div id="carousel" class="carousel slide mt-5" data-ride="carousel">
       <!-- Indicators -->
@@ -77,9 +81,9 @@
     <div id="accordion">
       <div class="card">
         <div class="card-header">
-          <a class="card-link" data-toggle="collapse" href="#collapseOne" id="ref">
-            <img src="assets/img/image-bd.png" class="imageSection mt-4" id="ref"/>
-            <h2 id="ref"></h2>
+          <a class="card-link" data-toggle="collapse" href="#collapseOne" id="test1">
+            <img src="assets/img/image-bd.png" class="imageSection mt-4"id="test1"/>
+            <h2 id="test1"></h2>
           </a>
         </div>
         <div id="collapseOne" class="collapse" data-parent="#accordion">
@@ -87,14 +91,15 @@
             <div class="elementContainer">
               <img src="assets/img/imagebd1.jpg" alt="" class="elementImage">
               <div class="elementDescription">
-                <h3 class="text-center">The walking dead</h3>
-                <p class="my-2 mx-4 text-center">Lorem ipsum dolor sit amet, consectetur
-                  adipisicing elit, sed do eiusmod tempor incididunt
-                  ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                <h3 class="text-center">Walking Dead Tome 1 - Passé décomposé</h3>
+                <p class="my-2 mx-4 text-center">Rick est policier et sort du coma pour découvrir avec horreur un monde où les morts ne meurent plus.
+                  Mais ils errent à la recherche des derniers humains pour s'en repaître.
+                  Il n'a alors plus qu'une idée en tête : retrouver sa femme et son fils, en espérant qu'ils soient rescapés de ce monde devenu fou.
+                  Un monde où plus rien ne sera jamais comme avant, et où une seule règle prévaut : survivre à tout prix.
                 </p>
               </div>
               <div class="elementPrice text-center">
-                <h4>21,00 €</h4>
+                <h4>14,50 €</h4>
                 <input class="mt-2 articleAmount" type="number" name="" value="0" />
                 <a href="#"><img src="assets/img/addToCart.svg" alt=""></a>
               </div>
@@ -105,14 +110,15 @@
             <div class="elementContainer">
               <img src="assets/img/imagebd2.jpg" alt="" class="elementImage">
               <div class="elementDescription">
-                <h3 class="text-center">Aquaman</h3>
-                <p class="my-2 mx-4 text-center">Lorem ipsum dolor sit amet, consectetur
-                  adipisicing elit, sed do eiusmod tempor incididunt
-                  ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                <h3 class="text-center">Aquaman Intégrale Tome 1</h3>
+                <p class="my-2 mx-4 text-center">Après des années à régner sur le royaume d'Atlantide, Arthur Curry, dit Aquaman,
+                  décide de revenir dans le monde de la surface avec son épouse, Mera. Mais le retour à la " vie civile " ne se fera pas sans peine,
+                  entre la méfiance des autorités à son égard et les attaques de créatures cannibales issues des profondeurs de l'océan !
+                  Aquaman ou le retour en force d'une icône de l'univers DC.
                 </p>
               </div>
               <div class="elementPrice text-center">
-                <h4>20,99 €</h4>
+                <h4>28,00 €</h4>
                 <input class="mt-2 articleAmount" type="number" name="" value="0" />
                 <a href="#"><img src="assets/img/addToCart.svg" alt=""></a>
               </div>
@@ -123,14 +129,15 @@
             <div class="elementContainer">
               <img src="assets/img/imagebd3.jpg" alt="" class="elementImage">
               <div class="elementDescription">
-                <h3 class="text-center">Harley Quinn</h3>
-                <p class="my-2 mx-4 text-center">Lorem ipsum dolor sit amet, consectetur
-                  adipisicing elit, sed do eiusmod tempor incididunt
-                  ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                <h3 class="text-center">Harley Quinn Tome 1 - Complètement marteau</h3>
+                <p class="my-2 mx-4 text-center"> L'ancienne psychiatre Harleen Quinzel n'est pas le genre de femme à se satisfaire d'une vie convenable et tranquille.
+                  Elle fuit la routine comme la peste et cherche par tous les moyens à faire de sa vie une aventure.
+                  Sa toute fraîche installation à Coney Island est donc l'occasion rêvée d'en commencer un nouveau chapitre !
+                  Avec son entrée fracassante dans l'équipe locale de roller derby,
                 </p>
               </div>
               <div class="elementPrice text-center">
-                <h4>19,99 €</h4>
+                <h4>19,00 €</h4>
                 <input class="mt-2 articleAmount" type="number" name="" value="0" />
                 <a href="#"><img src="assets/img/addToCart.svg" alt=""></a>
               </div>
@@ -141,14 +148,14 @@
             <div class="elementContainer">
               <img src="assets/img/imagebd4.jpg" alt="" class="elementImage">
               <div class="elementDescription">
-                <h3 class="text-center">Flash</h3>
-                <p class="my-2 mx-4 text-center">Lorem ipsum dolor sit amet, consectetur
-                  adipisicing elit, sed do eiusmod tempor incididunt
-                  ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                <h3 class="text-center">Flash Tome 2 - La révolte des lacars</h3>
+                <p class="my-2 mx-4 text-center">Suite des aventures de l'agent de police scientifique Barry Allen
+                  devenu l'homme le plus rapide du monde après avoir été frappé par la foudre et aspergé de divers produits chimiques.
+                  Sous l'identité de Flash, il utilise ses pouvoirs au service de la justice.
                 </p>
               </div>
               <div class="elementPrice text-center">
-                <h4>15,99 €</h4>
+                <h4>17,50 €</h4>
                 <input class="mt-2 articleAmount" type="number" name="" value="0" />
                 <a href="#"><img src="assets/img/addToCart.svg" alt=""></a>
               </div>
@@ -159,14 +166,13 @@
             <div class="elementContainer">
               <img src="assets/img/imagebd5.jpg" alt="" class="elementImage">
               <div class="elementDescription">
-                <h3 class="text-center">Asterix et Cleopatre</h3>
-                <p class="my-2 mx-4 text-center">Lorem ipsum dolor sit amet, consectetur
-                  adipisicing elit, sed do eiusmod tempor incididunt
-                  ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                <h3 class="text-center">Astérix Tome 6 - Astérix et Cléopâtre</h3>
+                <p class="my-2 mx-4 text-center">Cléopâtre fait le pari avec César que son peuple est encore capable de grandes réalisations.
+                  Elle ordonne à Numérobis de construire un palais somptueux pour César.
                 </p>
               </div>
               <div class="elementPrice text-center">
-                <h4>10,00 €</h4>
+                <h4>15,20 €</h4>
                 <input class="mt-2 articleAmount" type="number" name="" value="0" />
                 <a href="#"><img src="assets/img/addToCart.svg" alt=""></a>
               </div>
@@ -186,14 +192,14 @@
             <div class="elementContainer">
               <img src="assets/img/image1.jpg" alt="" class="elementImage">
               <div class="elementDescription">
-                <h3 class="text-center">Log Horizon tome1</h3>
-                <p class="my-2 mx-4 text-center">Lorem ipsum dolor sit amet, consectetur
-                  adipisicing elit, sed do eiusmod tempor incididunt
-                  ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                <h3 class="text-center">Log Horizon Tome 1</h3>
+                <p class="my-2 mx-4 text-center">Près de 30 000 joueurs japonais se sont retrouvés enfermés dans le jeu vidéo MMORPG "Eider Tale" !!
+                  Nul ne sait comment retourner dans le monde réel. De plus, à l'intérieur du jeu, la nourriture n'a aucun goût !
+                  Les joueurs perdent vite espoir lorsqu'ils se rendent compte que l'univers dans lequel ils étaient censés s'amuser est devenu un monde sans foi ni loi...
                 </p>
               </div>
               <div class="elementPrice text-center">
-                <h4>7,99 €</h4>
+                <h4>6,85 €</h4>
                 <input class="mt-2 articleAmount" type="number" name="" value="0" />
                 <a href="#"><img src="assets/img/addToCart.svg" alt=""></a>
               </div>
@@ -204,14 +210,14 @@
             <div class="elementContainer">
               <img src="assets/img/image2.jpg" alt="" class="elementImage">
               <div class="elementDescription">
-                <h3 class="text-center">Accel World tome6</h3>
-                <p class="my-2 mx-4 text-center">Lorem ipsum dolor sit amet, consectetur
-                  adipisicing elit, sed do eiusmod tempor incididunt
-                  ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                <h3 class="text-center">Accel World Tome 6</h3>
+                <p class="my-2 mx-4 text-center">En 2056, le monde a bien changé. Chacun utilise dorénavant un terminal portatif appelé Neuro-linker, permettant d'être connecté en permanence à des réseaux virtuels.
+                  Mais certaines choses ne changent pas. Il existe toujours des enfants qui servent de souffre-douleur à d'autres.
+                  Haruyuki, collégien petit et enrobé, est un enfant qui souffre de cette persécution.
                 </p>
               </div>
               <div class="elementPrice text-center">
-                <h4>8,99 €</h4>
+                <h4>6,99 €</h4>
                 <input class="mt-2 articleAmount" type="number" name="" value="0" />
                 <a href="#"><img src="assets/img/addToCart.svg" alt=""></a>
               </div>
@@ -222,14 +228,14 @@
             <div class="elementContainer">
               <img src="assets/img/image3.jpg" alt="" class="elementImage">
               <div class="elementDescription">
-                <h3 class="text-center">Freezing tome11</h3>
-                <p class="my-2 mx-4 text-center">Lorem ipsum dolor sit amet, consectetur
-                  adipisicing elit, sed do eiusmod tempor incididunt
-                  ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                <h3 class="text-center">Freezing Tome 11</h3>
+                <p class="my-2 mx-4 text-center">Alors que la guerre contre les Nova devient de plus en plus meurtrière, les humains décident d'officialiser le plan E qui vise à créer des Pandora artificiellement.
+                  Mais les E-Pandora sont confrontées à une réalité si cruelle qu'elles commencent à se révolter.
+                  De terribles combats les attendent, face aux Pandora originelles...
                 </p>
               </div>
               <div class="elementPrice text-center">
-                <h4>7,99 €</h4>
+                <h4>7,50 €</h4>
                 <input class="mt-2 articleAmount" type="number" name="" value="0" />
                 <a href="#"><img src="assets/img/addToCart.svg" alt=""></a>
               </div>
@@ -240,14 +246,15 @@
             <div class="elementContainer">
               <img src="assets/img/image4.jpg" alt="" class="elementImage">
               <div class="elementDescription">
-                <h3 class="text-center">Highschool of the dead tome1</h3>
-                <p class="my-2 mx-4 text-center">Lorem ipsum dolor sit amet, consectetur
-                  adipisicing elit, sed do eiusmod tempor incididunt
-                  ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                <h3 class="text-center">Highschool of the dead Tome 1</h3>
+                <p class="my-2 mx-4 text-center">La journée du 13 avril avait commencé comme une matinée ordinaire au pensionnat de Takashi.
+                  Mais, alors qu'il sèche les cours et s'apprête à faire une petite sieste sur le toit de l'établissement, il aperçoit devant le portail un professeur se faire dévorer par ce qui semble bien être un mort-vivant...
+                  Tout bascule alors dans l'horreur et le gore.
+                  Les films de Romero vous ont terrorisé ?
                 </p>
               </div>
               <div class="elementPrice text-center">
-                <h4>12,99 €</h4>
+                <h4>6,95 €</h4>
                 <input class="mt-2 articleAmount" type="number" name="" value="0" />
                 <a href="#"><img src="assets/img/addToCart.svg" alt=""></a>
               </div>
@@ -258,10 +265,11 @@
             <div class="elementContainer">
               <img src="assets/img/image5.jpg" alt="" class="elementImage">
               <div class="elementDescription">
-                <h3 class="text-center">Darling in the franxx tome1</h3>
-                <p class="my-2 mx-4 text-center">Lorem ipsum dolor sit amet, consectetur
-                  adipisicing elit, sed do eiusmod tempor incididunt
-                  ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                <h3 class="text-center">Darling in the Franxx Tome 1</h3>
+                <p class="my-2 mx-4 text-center">Hiro (Code:016) est un jeune pilote vivant à Mistilteinn, un quartier se trouvant sur Plantation,
+                  une ville fortifiée mobile où s'est retranchée la population après que la surface de la Terre fut réduite en ruines.
+                  Dans ce quartier, les jeunes sont formés à piloter les Franxx, des robots contrôlés par duo afin de combattre les Kyōryū,
+                  de mystérieuses créatures mécaniques géantes.
                 </p>
               </div>
               <div class="elementPrice text-center">
@@ -286,13 +294,14 @@
               <img src="assets/img/imagesf1.jpg" alt="" class="elementImage">
               <div class="elementDescription">
                 <h3 class="text-center">Bilbo le Hobbit</h3>
-                <p class="my-2 mx-4 text-center">Lorem ipsum dolor sit amet, consectetur
-                  adipisicing elit, sed do eiusmod tempor incididunt
-                  ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                <p class="my-2 mx-4 text-center">Bilbo, comme tous les hobbits, est un petit être paisible qui n'aime pas être dérangé quand il est à table.
+                  L'aventure lui tombe dessus comme la foudre, quand le magicien Gandalf et treize nains barbus viennent lui parler de trésor,
+                  d'expédition périlleuse, et du dragon Smaug qu'il va affronter. Car Bilbo doit partir avec eux !
+                  Et le plus extraordinaire, c'est que le hobbit affrontera tous les dangers, sans jamais perdre son humour, même s'il tremblera plus d'une fois.
                 </p>
               </div>
               <div class="elementPrice text-center">
-                <h4>16,99 €</h4>
+                <h4>6,00 €</h4>
                 <input class="mt-2 articleAmount" type="number" name="number" value="0" />
                 <a href="#"><img src="assets/img/addToCart.svg" alt=""></a>
               </div>
@@ -304,13 +313,13 @@
               <img src="assets/img/imagesf2.jpg" alt="" class="elementImage">
               <div class="elementDescription">
                 <h3 class="text-center">Percy Jackson le voleur de foudre</h3>
-                <p class="my-2 mx-4 text-center">Lorem ipsum dolor sit amet, consectetur
-                  adipisicing elit, sed do eiusmod tempor incididunt
-                  ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                <p class="my-2 mx-4 text-center">"Je n'ai jamais voulu être un demi-dieu. Une vie de demi-dieu, c'est dangereux, c'est angoissant.
+                  Le plus souvent, ça se termine par une mort abominable et douloureuse. Il se peut que vous soyez des nôtres.
+                  Or, dès l'instant où vous le saurez, il ne leur faudra pas longtemps pour le percevoir, eux aussi, et se lancer à vos trousses. Je vous aurai prévenus."
                 </p>
               </div>
               <div class="elementPrice text-center">
-                <h4>17,99 €</h4>
+                <h4>6,90 €</h4>
                 <input class="mt-2 articleAmount" type="number" name="" value="0" />
                 <a href="#"><img src="assets/img/addToCart.svg" alt=""></a>
               </div>
@@ -321,14 +330,15 @@
             <div class="elementContainer">
               <img src="assets/img/imagesf3.jpg" alt="" class="elementImage">
               <div class="elementDescription">
-                <h3 class="text-center">Les chevaliers D'emeraude tome1</h3>
-                <p class="my-2 mx-4 text-center">Lorem ipsum dolor sit amet, consectetur
-                  adipisicing elit, sed do eiusmod tempor incididunt
-                  ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                <h3 class="text-center">Les Chevaliers d'Emeraude Tome 1 - Les Enfants Magiques</h3>
+                <p class="my-2 mx-4 text-center">A l’intérieur de la ruche impériale des hommes insectes, le sorcier Asbeth se prosterne devant l’Empereur Amecareth,
+                  assis sur son trône en pierre noire. Après avoir interrogé les étoiles, le sorcier exulte, et annonce à son souverain la grande nouvelle :
+                  il est temps de repartir à la conquête des territoires des humains ! Pendant ce temps, au Royaume d’Émeraude, le vieux magicien Élund,
+                  après avoir lui aussi consulté les étoiles et pressenti le danger, vient partager son inquiétude avec le roi Émeraude 1er.
                 </p>
               </div>
               <div class="elementPrice text-center">
-                <h4>14,99 €</h4>
+                <h4>13,95 €</h4>
                 <input class="mt-2 articleAmount" type="number" name="" value="0" />
                 <a href="#"><img src="assets/img/addToCart.svg" alt=""></a>
               </div>
@@ -339,14 +349,15 @@
             <div class="elementContainer">
               <img src="assets/img/imagesf4.jpg" alt="" class="elementImage">
               <div class="elementDescription">
-                <h3 class="text-center">harry potter et l'ordre du phenix</h3>
-                <p class="my-2 mx-4 text-center">Lorem ipsum dolor sit amet, consectetur
-                  adipisicing elit, sed do eiusmod tempor incididunt
-                  ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                <h3 class="text-center">Harry Potter Tome 5 - Harry Potter et l'Ordre du Phénix</h3>
+                <p class="my-2 mx-4 text-center">Après un horrible été, Harry, 15 ans, retourne à Poudlard.
+                  Une nouvelle enseignante lui rend la vie dure et sème la zizanie parmi les grands et les petits sorciers.
+                  Ridiculisé, affligé par les images qu'insinue Voldemort, bien vivant, dans son cerveau et par une timidité maladive devant la belle Cho Chang,
+                  Harry se retrouve dans une situation difficile.
                 </p>
               </div>
               <div class="elementPrice text-center">
-                <h4>20,00 €</h4>
+                <h4>14,90 €</h4>
                 <input class="mt-2 articleAmount" type="number" name="" value="0" />
                 <a href="#"><img src="assets/img/addToCart.svg" alt=""></a>
               </div>
@@ -357,14 +368,14 @@
             <div class="elementContainer">
               <img src="assets/img/imagesf5.jpg" alt="" class="elementImage">
               <div class="elementDescription">
-                <h3 class="text-center">Divergente tome1</h3>
-                <p class="my-2 mx-4 text-center">Lorem ipsum dolor sit amet, consectetur
-                  adipisicing elit, sed do eiusmod tempor incididunt
-                  ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                <h3 class="text-center">Divergente Tome 1</h3>
+                <p class="my-2 mx-4 text-center">Cinq destins. Un seul choix. Tris vit dans un monde post-apocalyptique où la société est divisée en cinq factions.
+                  A 16 ans, elle doit choisir son appartenance pour le reste de sa vie. Cas rarissime, son test d'aptitudes n'est pas concluant.
+                  Elle est divergente. Ce secret peut la sauver. Ou la tuer.
                 </p>
               </div>
               <div class="elementPrice text-center">
-                <h4>12,99 €</h4>
+                <h4>16,90 €</h4>
                 <input class="mt-2 articleAmount" type="number" name="" value="0" />
                 <a href="#"><img src="assets/img/addToCart.svg" alt=""></a>
               </div>
@@ -385,9 +396,10 @@
               <img src="assets/img/imager1.jpg" alt="" class="elementImage">
               <div class="elementDescription">
                 <h3 class="text-center">Carnets noirs</h3>
-                <p class="my-2 mx-4 text-center">Lorem ipsum dolor sit amet, consectetur
-                  adipisicing elit, sed do eiusmod tempor incididunt
-                  ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                <p class="my-2 mx-4 text-center">En prenant sa retraite, John Rothstein a plongé dans le désespoir les millions de lecteurs des aventures de Jimmy Gold.
+                  Devenu fou de rage depuis la disparition de son héros favori, Morris Bellamy assassine le vieil écrivain pour s'emparer de sa fortune et, surtout,
+                  de ses précieux carnets de notes. Le bonheur dans le crime ? C'était compter sans les mauvais tours du destin... et la perspicacité du détective Bill Hodges.
+                  Trente ans après Misery, Stephen King renoue avec l'un de ses thèmes de prédilection : l'obsession d'un fan.
                 </p>
               </div>
               <div class="elementPrice text-center">
@@ -402,10 +414,10 @@
             <div class="elementContainer">
               <img src="assets/img/imager2.jpg" alt="" class="elementImage">
               <div class="elementDescription" >
-                <h3 class="text-center">Le Labyrinthe tome1</h3>
-                <p class="my-2 mx-4 text-center">Lorem ipsum dolor sit amet, consectetur
-                  adipisicing elit, sed do eiusmod tempor incididunt
-                  ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                <h3 class="text-center">L'épreuve Tome 1 - Le labyrinthe</h3>
+                <p class="my-2 mx-4 text-center">uand Thomas reprend connaissance, sa mémoire est vide, seul son nom lui est familier... Il se retrouve entouré d'adolescents dans un lieu étrange, à l'ombre de murs infranchissables.
+                  Quatre portes gigantesques, qui se referment le soir, ouvrent sur un labyrinthe peuplé de monstres d'acier.
+                  Chaque nuit, le plan en est modifié. Thomas comprend qu'une terrible épreuve les attend tous.
                 </p>
               </div>
               <div class="elementPrice text-center">
@@ -421,13 +433,13 @@
               <img src="assets/img/imager3.jpg" alt="" class="elementImage">
               <div class="elementDescription">
                 <h3 class="text-center">Rouge Rubis</h3>
-                <p class="my-2 mx-4 text-center">Lorem ipsum dolor sit amet, consectetur
-                  adipisicing elit, sed do eiusmod tempor incididunt
-                  ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                <p class="my-2 mx-4 text-center">Gwendolyn est une adolescente comme les autres. Même s'il lui arrive de voir des fantômes dans les couloirs de son lycée.
+                  Et même si certains membres de sa famille peuvent voyager dans le temps. C'est bien connu ; aucune famille n'est parfaite !
+                  D'ailleurs, Gwendolyn ne se sent pas vraiment concernée, puisque c'est sa cousine qui est censée développer cette capacité.
                 </p>
               </div>
               <div class="elementPrice text-center">
-                <h4>11,99 €</h4>
+                <h4>7,40 €</h4>
                 <input class="mt-2 articleAmount" type="number" name="" value="0" />
                 <a href="#"><img src="assets/img/addToCart.svg" alt=""></a>
               </div>
@@ -438,14 +450,14 @@
             <div class="elementContainer">
               <img src="assets/img/imager4.jpg" alt="" class="elementImage">
               <div class="elementDescription">
-                <h3 class="text-center">Hunger game</h3>
-                <p class="my-2 mx-4 text-center">Lorem ipsum dolor sit amet, consectetur
-                  adipisicing elit, sed do eiusmod tempor incididunt
-                  ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                <h3 class="text-center">Hunger Games Tome 1</h3>
+                <p class="my-2 mx-4 text-center"> Dans un futur sombre, sur les ruines des Etats-Unis, un jeu télévisé est créé pour contrôler le peuple par la terreur.
+                  Douze garçons et douze filles tirés au sort participent à cette sinistre téléréalité, que tout le monde est forcé de regarder en direct.
+                  Une seule règle dans l'arène : survivre, à tout prix. Quand sa petite soeur est appelée pour participer aux Hunger Games, Katniss n'hésite pas une seconde.
                 </p>
               </div>
               <div class="elementPrice text-center">
-                <h4>24 €</h4>
+                <h4>7.90 €</h4>
                 <input class="mt-2 articleAmount" type="number" name="" value="0" />
                 <a href="#"><img src="assets/img/addToCart.svg" alt=""></a>
               </div>
@@ -457,13 +469,13 @@
               <img src="assets/img/imager5.jpg" alt="" class="elementImage">
               <div class="elementDescription">
                 <h3 class="text-center">Bleu Saphir</h3>
-                <p class="my-2 mx-4 text-center">Lorem ipsum dolor sit amet, consectetur
-                  adipisicing elit, sed do eiusmod tempor incididunt
-                  ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                <p class="my-2 mx-4 text-center">Longtemps, Gwendolyn a pensé être une lycéenne comme les autres. Jusqu'au jour où la réalité l'a rattrapée.
+                  Non, elle n'est pas comme tout le monde, oui, elle appartient aux Veilleurs du temps, elle doit voyager à travers les âges,
+                  fermer un Cercle auquel elle ne comprend rien, partir à la recherche d'autres Veilleurs dans le passé, et affronter un comte du XVIIIe siècle...
                 </p>
               </div>
               <div class="elementPrice text-center">
-                <h4>11,99 €</h4>
+                <h4>7,40 €</h4>
                 <input class="mt-2 articleAmount" type="number" name="" value="0" />
                 <a href="#"><img src="assets/img/addToCart.svg" alt=""></a>
               </div>
@@ -484,13 +496,14 @@
               <img src="assets/img/Le-livre-de-Salomon.jpg" alt="" class="elementImage">
               <div class="elementDescription">
                 <h3 class="text-center">Le livre de Salomon</h3>
-                <p class="my-2 mx-4 text-center">Lorem ipsum dolor sit amet, consectetur
-                  adipisicing elit, sed do eiusmod tempor incididunt
-                  ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                <p class="my-2 mx-4 text-center">Ce livre, d'un style et d'un contenu bien différent de L'Ecclésiaste (Qohelet), s'enracine pourtant dans la même lucidité décapante : tout est illusion, impermanence.
+                  Mais, là où L'Ecclésiaste se contente de dire : « Tout est poussière et retourne à la poussière », la sagesse de Salomon préfère :
+                  « Tout est lumière et retourne à la lumière ». La mort n'est pas le dernier mot, et l'homme mortel n'est pas la fin de l'homme.
+                  D'autres thèmes propres à la tradition juive d'Alexandrie sont également développés : qu'est-ce que la sagesse ? Quelle est son origine ?
                 </p>
               </div>
               <div class="elementPrice text-center">
-                <h4>19,99 €</h4>
+                <h4>12,99 €</h4>
                 <input class="mt-2 articleAmount" type="number" name="" value="0" />
                 <a href="#"><img src="assets/img/addToCart.svg" alt=""></a>
               </div>
@@ -499,16 +512,17 @@
           <hr />
           <div class="card-body">
             <div class="elementContainer">
-              <img src="assets/img/imageEB1.jpg" alt="" class="elementImage">
+              <img src="assets/img/leo-babauta.jpeg" alt="" class="elementImage">
               <div class="elementDescription" >
-                <h3 class="text-center">Le livre de Salomon</h3>
-                <p class="my-2 mx-4 text-center">Lorem ipsum dolor sit amet, consectetur
-                  adipisicing elit, sed do eiusmod tempor incididunt
-                  ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                <h3 class="text-center">L'art d'aller à l'essentiel</h3>
+                <p class="my-2 mx-4 text-center">Être plus efficace et plus détendu, avancer dans ses projets professionnels tout en ayant du temps pour soi et pour les êtres qui nous sont chers,
+                  jouir des plaisirs de la vie tout en remplissant ses obligations... Le secret ? Simplifier sa vie, se fixer moins d’objectifs et obtenir plus de résultats.
+                  Ce livre vous initie à l’art d’aller à l’essentiel : il vous transmet le pouvoir d’une vie simplifiée.
+                  En apprenant à identifier les choses indispensables de votre vie et à sélectionner le nécessaire, vous déplacerez des montagnes.
                 </p>
               </div>
               <div class="elementPrice text-center">
-                <h4>19,99 €</h4>
+                <h4>6,99 €</h4>
                 <input class="mt-2 articleAmount" type="number" name="" value="0" />
                 <a href="#"><img src="assets/img/addToCart.svg" alt=""></a>
               </div>
@@ -517,16 +531,19 @@
           <hr />
           <div class="card-body">
             <div class="elementContainer">
-              <img src="assets/img/imageEB2.jpg" alt="" class="elementImage">
+              <img src="assets/img/vie.jpg" alt="" class="elementImage">
               <div class="elementDescription">
-                <h3 class="text-center">Le livre de Salomon</h3>
-                <p class="my-2 mx-4 text-center">Lorem ipsum dolor sit amet, consectetur
-                  adipisicing elit, sed do eiusmod tempor incididunt
-                  ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                <h3 class="text-center">Ta deuxième vie commence quand tu comprends que tu n'en as qu'une</h3>
+                <p class="my-2 mx-4 text-center"> Vous souffrez probablement d'une forme de routinite aiguë.
+                  - Une quoi ?
+                  - Une routinite aiguë. C'est une affection de l'âme qui touche de plus en plus de gens dans le monde, surtout en Occident. Les symptômes sont presque toujours les mêmes : baisse de motivation, morosité chronique, perte de repères et de sens, difficulté à être heureux malgré une opulence de biens matériels, désenchantement, lassitude...
+                  - Mais... Comment vous savez tout ça ?
+                  - Je suis routinologue.
+                  - Routino-quoi ?
                 </p>
               </div>
               <div class="elementPrice text-center">
-                <h4>19,99 €</h4>
+                <h4>9,99 €</h4>
                 <input class="mt-2 articleAmount" type="number" name="" value="0" />
                 <a href="#"><img src="assets/img/addToCart.svg" alt=""></a>
               </div>
@@ -535,16 +552,17 @@
           <hr />
           <div class="card-body">
             <div class="elementContainer">
-              <img src="assets/img/imageEB3.jpg" alt="" class="elementImage">
+              <img src="assets/img/shining.jpg" alt="" class="elementImage">
               <div class="elementDescription">
-                <h3 class="text-center">Le livre de Salomon</h3>
-                <p class="my-2 mx-4 text-center">Lorem ipsum dolor sit amet, consectetur
-                  adipisicing elit, sed do eiusmod tempor incididunt
-                  ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                <h3 class="text-center">Shining</h3>
+                <p class="my-2 mx-4 text-center">Situé dans les montagnes Rocheuses, l'Overlook Palace passe pour être l'un des plus beaux lieux du monde.
+                  Confort, luxe, volupté... L'hiver, l'hôtel est fermé. Coupé du monde par le froid et la neige. Alors, seul l'habite un gardien.
+                  Celui qui a été engagé cet hiver-là s'appelle Jack Torrance : c'est un alcoolique, un écrivain raté, qui tente d'échapper au désespoir.
+                  Avec lui vivent sa femme, Wendy, et leur enfant, Danny.
                 </p>
               </div>
               <div class="elementPrice text-center">
-                <h4>19,99 €</h4>
+                <h4>7,99 €</h4>
                 <input class="mt-2 articleAmount" type="number" name="" value="0" />
                 <a href="#"><img src="assets/img/addToCart.svg" alt=""></a>
               </div>
@@ -553,16 +571,16 @@
           <hr />
           <div class="card-body">
             <div class="elementContainer">
-              <img src="assets/img/imageEB4.jpg" alt="" class="elementImage">
+              <img src="assets/img/ca.jpg" alt="" class="elementImage">
               <div class="elementDescription">
-                <h3 class="text-center">Le livre de Salomon</h3>
-                <p class="my-2 mx-4 text-center">Lorem ipsum dolor sit amet, consectetur
-                  adipisicing elit, sed do eiusmod tempor incididunt
-                  ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                <h3 class="text-center">Ca Tome 1</h3>
+                <p class="my-2 mx-4 text-center">Enfants, dans leur petite ville de Derry, Ben, Eddie, Richie et la petite bande du " Club des ratés ",
+                  comme ils se désignaient, ont été confrontés à l'horreur absolue : ça, cette chose épouvantable, tapie dans les égouts et capable de déchiqueter vif un garçonnet de six ans...
+                  Vingt-sept ans plus tard, l'appel de l'un d'entre eux les réunit sur les lieux de leur enfance.
                 </p>
               </div>
               <div class="elementPrice text-center">
-                <h4>19,99 €</h4>
+                <h4>9,99 €</h4>
                 <input class="mt-2 articleAmount" type="number" name="" value="0" />
                 <a href="#"><img src="assets/img/addToCart.svg" alt=""></a>
               </div>
@@ -582,14 +600,15 @@
             <div class="elementContainer">
               <img src="assets/img/imagec1.jpg" alt="" class="elementImage">
               <div class="elementDescription">
-                <h3 class="text-center">Recette de tapas</h3>
-                <p class="my-2 mx-4 text-center">Lorem ipsum dolor sit amet, consectetur
-                  adipisicing elit, sed do eiusmod tempor incididunt
-                  ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                <h3 class="text-center">Recettes de tapas</h3>
+                <p class="my-2 mx-4 text-center">100 recettes pour une soirée tapas réussie. Des mini- brochettes, des salades variées, des toasts et beignets...
+                  tout pour changer des chips et cacahuètes à l'apéritif et épater vos amis !
+                  Vous trouverez plein d'idées de recettes, des incontournables aux plus élaborées, des plus légères aux plus généreuses,
+                  à picorer, à grignoter mais surtout à partager !
                 </p>
               </div>
               <div class="elementPrice text-center">
-                <h4>10,99 €</h4>
+                <h4>12,99 €</h4>
                 <input class="mt-2 articleAmount" type="number" name="number" value="0" />
                 <a href="#"><img src="assets/img/addToCart.svg" alt=""></a>
               </div>
@@ -600,14 +619,14 @@
             <div class="elementContainer">
               <img src="assets/img/imagec2.jpg" alt="" class="elementImage">
               <div class="elementDescription" >
-                <h3 class="text-center">Recette de gateaux</h3>
-                <p class="my-2 mx-4 text-center">Lorem ipsum dolor sit amet, consectetur
-                  adipisicing elit, sed do eiusmod tempor incididunt
-                  ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                <h3 class="text-center">Recettes de gâteaux</h3>
+                <p class="my-2 mx-4 text-center">Laissez-vous surprendre par les 100 recettes de cet ouvrage : gâteaux magique, gâteaux surprise, rainbow cakes, angel cakes, mug cakes, etc.
+                  Que ce soit pour un goûter gourmand, une soirée entre amis, ou une grande occasion, vous trouverez forcément une recette qui surprendra vos convives !
+                  Gâteau magique au caramel au beurre salé, cake au coeur multicolore, gâteau zébré, etc.
                 </p>
               </div>
               <div class="elementPrice text-center">
-                <h4>11,99 €</h4>
+                <h4>15,99 €</h4>
                 <input class="mt-2 articleAmount" type="number" name="" value="0" />
                 <a href="#"><img src="assets/img/addToCart.svg" alt=""></a>
               </div>
@@ -618,14 +637,13 @@
             <div class="elementContainer">
               <img src="assets/img/imagec3.jpg" alt="" class="elementImage">
               <div class="elementDescription">
-                <h3 class="text-center">Recette de pizza</h3>
-                <p class="my-2 mx-4 text-center">Lorem ipsum dolor sit amet, consectetur
-                  adipisicing elit, sed do eiusmod tempor incididunt
-                  ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                <h3 class="text-center">Recette de pizzas</h3>
+                <p class="my-2 mx-4 text-center">Pizza forestière ou hawaienne, quiche crabe-crevette ou champignons-curry, ou encore cake marbré au pesto et à la tapenade.
+                  Rapides, faciles et déclinables à l'infini, découvrez 100 recettes de pizzas, quiches et cakes pour ne jamais être à court d'idées !
                 </p>
               </div>
               <div class="elementPrice text-center">
-                <h4>12,99 €</h4>
+                <h4>9,99 €</h4>
                 <input class="mt-2 articleAmount" type="number" name="" value="0" />
                 <a href="#"><img src="assets/img/addToCart.svg" alt=""></a>
               </div>
@@ -637,13 +655,13 @@
               <img src="assets/img/imagec4.jpg" alt="" class="elementImage">
               <div class="elementDescription">
                 <h3 class="text-center">Bar à salades</h3>
-                <p class="my-2 mx-4 text-center">Lorem ipsum dolor sit amet, consectetur
-                  adipisicing elit, sed do eiusmod tempor incididunt
-                  ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                <p class="my-2 mx-4 text-center">25 recettes sucrées ou salées, pour réinventer la salade ! Le principe : une salade disposée en jolies couches ultra-colorées, dans des bocaux trendy et si faciles à transporter !
+                  Le résultat : des jars gourmandes et pratiques : l'alliance parfaite du plaisir des yeux et des papilles !
+                  A emporter façon lunchbox ou à servir à ses invités, pour se régaler en famille ou entre amis !
                 </p>
               </div>
               <div class="elementPrice text-center">
-                <h4>6,99 €</h4>
+                <h4>8,99 €</h4>
                 <input class="mt-2 articleAmount" type="number" name="" value="0" />
                 <a href="#"><img src="assets/img/addToCart.svg" alt=""></a>
               </div>
@@ -655,13 +673,13 @@
               <img src="assets/img/imagec5.jpg" alt="" class="elementImage">
               <div class="elementDescription">
                 <h3 class="text-center">Tarte de Fête</h3>
-                <p class="my-2 mx-4 text-center">Lorem ipsum dolor sit amet, consectetur
-                  adipisicing elit, sed do eiusmod tempor incididunt
-                  ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                <p class="my-2 mx-4 text-center">De délicieuses tartes... Mais plus encore ! Une méthode d'apprentissage visuelle en 4 niveaux :
+                  facile, confirmé, expert, comme un chef. Entraînez-vous à exécuter les techniques incontournables pour réaliser les tartes de fête
+                  (ganache, crème bavaroise, tissage de pâte, etc.) et testez vos progrès en préparant vous-même des tartes aussi belles que bonnes.
                 </p>
               </div>
               <div class="elementPrice text-center">
-                <h4>7,99 €</h4>
+                <h4>12,99 €</h4>
                 <input class="mt-2 articleAmount" type="number" name="" value="0" />
                 <a href="#"><img src="assets/img/addToCart.svg" alt=""></a>
               </div>
@@ -670,7 +688,334 @@
         </div>
       </div>
     </div>
-  </div>
+    <footer>
+      <div class="row footer">
+        <div class="col-lg-3"></div>
+        <div class="col-lg-1"><a href="#">A propos</a></div>
+        <div class="col-lg-1"><a href="#">FAQ</a></div>
+        <div class="col-lg-1"><a href="#">Contact</a></div>
+        <div class="col-lg-1"><a href="#">Facebook</a></div>
+        <div class="col-lg-1"><a href="#">Twitter</a></div>
+        <div class="col-lg-1"><a href="#">Instagram</a></div>
+        <div class="col-lg-3"></div>
+      </div> <!--Div Footer -->
+    </footer>
+  </div> <!-- DIV CONTAINER -->
   <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+  <a onclick="modale()"><img src="assets/img/addToCart.svg" width="20%" height="50px" alt=""></a>
+  <!-- The Modal -->
+  <div id="aModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <section  class="container">
+        <article class="well form-inline pull-left col-md-12">
+          <legend>Gestion du panier</legend>
+          <label class="col-lg-2">nom du livre :</label><select onchange="prix()" id="id" name="select">
+            <option value=1>Walking Dead Tome 1 - Passé décomposé</option>
+            <option value=2>Aquaman Intégrale Tome 1</option>
+            <option value=3>Harley Quinn Tome1 - Complètement marteau</option>
+            <option value=4>Flash Tome 2 - La révolte des lascars</option>
+            <option value=5>Asterix Tome 6 - Asterix et Cléopâtre</option>
+            <option value=6>Log Horizon Tome 1</option>
+            <option value=7>Accel World Tome 6</option>
+            <option value=8>Freezing Tome 11</option>
+            <option value=9>Highschool of the dead Tome 1</option>
+            <option value=10>Darling in the Franxx Tome 1</option>
+            <option value=11>Bilbo le Hobbit</option>
+            <option value=12>Percy Jackson le voleur de foudre</option>
+            <option value=13>Les chevaliersd Emeraude Tome 1 - Les Enfants Magiques</option>
+            <option value=14>Harry Potter Tome 5 - Harry Potter et Ordre du Phénix</option>
+            <option value=15>Divergente Tome 1</option>
+            <option value=16>Carnets noirs</option>
+            <option value=17>L épreuve Tome 1 - Le labyrinthe</option>
+            <option value=18>Rouge Rubis</option>
+            <option value=19>Hunger Games Tome 1</option>
+            <option value=20>Bleu Saphir</option>
+            <option value=21>Le livre de Salomon</option>
+            <option value=22>L art d'aller à l'essentiel</option>
+            <option value=23>Ta deuxième vie commence quand tu comprends que tu n'en as qu'une</option>
+            <option value=24>Shining</option>
+            <option value=25>Ca Tome 1</option>
+            <option value=26>Recettes de tapas</option>
+            <option value=27>Recettes de gâteaux</option>
+            <option value=28>Recette de pizzas</option>
+            <option value=29>Bar à salades</option>
+            <option value=30>Tarte de Fête</option>
+          </select>
+          <label class="col-lg-2" >Quantité :</label><input type = "number" id = "qte" style="width:120px" class="input-sm form-control"></input>
+          <label class="col-lg-2">Prix :</label><label class="col-lg-2" id='prix'></label>
+          <button class="btn btn-primary" type="submit" onclick="ajouter()"> Ajouter au panier</button>
+        </article>
+      </section>
+      <section class="container">
+        <article class="well form-inline pull-left col-lg-5">
+          <legend>Contenu du panier</legend>
+          <table id="tableau" class="table">
+            <thead>
+              <tr>
+                <th>code du livre</th>
+                <th>Qte</th>
+                <th>Prix unitaire</th>
+                <th>Prix de la ligne</th>
+                <th>Supprimer</th>
+              </tr>
+            </thead>
+          </table>
+          <br><label>Prix du panier total</label> : <label id = "prixTotal"></label>
+          <label id = "nbreLignes" hidden>0</label>
+        </article>
+      </section>
+    </div>
+  </div>
+  <script>
+  // modale
+  var modal = document.getElementById('aModal');
+
+  // le bouton pour avoir la modale
+  var btn = document.getElementById("aBtn");
+
+  // avoir le span pour fermer la modale
+  var span = document.getElementsByClassName("close")[0];
+
+  // on click ouvrir la modale
+  function modale() {
+    modal.style.display = "block";
+  }
+
+  // on click close la modale
+  span.onclick = function() {
+    modal.style.display = "none";
+  }
+
+  // quand click a cotés close modale
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+  // référencement des prix
+  function prix() {
+    var priceRef= document.getElementById('id').value;
+    var articlePrice;
+    if (priceRef == 1) {
+      articlePrice = 14.50;
+      articlePrice = parseInt(articlePrice);
+      document.getElementById('prix').innerHTML = parseFloat(articlePrice);
+    } else if (priceRef == 2) {
+      articlePrice = 28.00;
+      articlePrice = parseInt(articlePrice);
+      document.getElementById('prix').innerHTML = articlePrice;
+    } else if (priceRef == 3) {
+      articlePrice = 19.00;
+      document.getElementById('prix').innerHTML = articlePrice;
+    } else if (priceRef == 4) {
+      articlePrice = 17.50;
+      document.getElementById('prix').innerHTML = articlePrice;
+    } else if (priceRef = 5) {
+      articlePrice = 15.20;
+      document.getElementById('prix').innerHTML = articlePrice;
+    } else if (priceRef = 6) {
+      articlePrice = 6.85;
+      document.getElementById('prix').innerHTML = articlePrice;
+    } else if (priceRef == 7) {
+      articlePrice = 6.99;
+      document.getElementById('prix').innerHTML = articlePrice;
+    } else if (priceRef == 8) {
+      articlePrice = 7.50;
+      document.getElementById('prix').innerHTML = articlePrice;
+    } else if (priceRef == 9) {
+      articlePrice = 6.95;
+      document.getElementById('prix').innerHTML = articlePrice;
+    } else if (priceRef == 10) {
+      articlePrice = 10.99;
+      document.getElementById('prix').innerHTML =articlePrice;
+    } else if (priceRef == 11) {
+      articlePrice = 6.00;
+      document.getElementById('prix').innerHTML =articlePrice;
+    } else if (priceRef == 12) {
+      articlePrice = 6.90;
+      document.getElementById('prix').innerHTML =articlePrice;
+    } else if (priceRef == 13) {
+      articlePrice = 13.95;
+      document.getElementById('prix').innerHTML =articlePrice;
+    } else if (priceRef == 14) {
+      articlePrice = 14.90;
+      document.getElementById('prix').innerHTML =articlePrice;
+    } else if (priceRef == 15) {
+      articlePrice = 16.90;
+      document.getElementById('prix').innerHTML =articlePrice;
+    } else if (priceRef == 16) {
+      articlePrice = 21.99;
+      document.getElementById('prix').innerHTML =articlePrice;
+    } else if (priceRef == 17) {
+      articlePrice = 22.99;
+      document.getElementById('prix').innerHTML =articlePrice;
+    } else if (priceRef == 18) {
+      articlePrice = 7.40;
+      document.getElementById('prix').innerHTML =articlePrice;
+    } else if (priceRef == 19) {
+      articlePrice = 7.90;
+      document.getElementById('prix').innerHTML =articlePrice;
+    } else if (priceRef == 20) {
+      articlePrice = 7.40;
+      document.getElementById('prix').innerHTML =articlePrice;
+    } else if (priceRef == 21) {
+      articlePrice = 12.99;
+      document.getElementById('prix').innerHTML =articlePrice;
+    } else if (priceRef == 22) {
+      articlePrice = 6.99;
+      document.getElementById('prix').innerHTML =articlePrice;
+    } else if (priceRef == 23) {
+      articlePrice = 9.99;
+      document.getElementById('prix').innerHTML =articlePrice;
+    } else if (priceRef == 24) {
+      articlePrice = 7.99;
+      document.getElementById('prix').innerHTML =articlePrice;
+    } else if (priceRef == 25) {
+      articlePrice = 9.99;
+      document.getElementById('prix').innerHTML =articlePrice;
+    }  else if (priceRef == 26) {
+      articlePrice = 12.99;
+      document.getElementById('prix').innerHTML =articlePrice;
+    } else if (priceRef == 27) {
+      articlePrice = 15.99;
+      document.getElementById('prix').innerHTML =articlePrice;
+    } else if (priceRef == 28) {
+      articlePrice = 9.99;
+      document.getElementById('prix').innerHTML =articlePrice;
+    } else if (priceRef == 29) {
+      articlePrice = 8.99;
+      document.getElementById('prix').innerHTML =articlePrice;
+    } else if (priceRef == 30) {
+      articlePrice = 12.99;
+      document.getElementById('prix').innerHTML =articlePrice;
+    }
+    else{
+      alert('error')  ;
+    }
+  }
+  // fonction préparation du tableau
+  function LignePanier (code, qte, prix)
+  {
+    this.codeArticle = code;
+    this.qteArticle = qte;
+    this.prixArticle = prix;
+    this.ajouterQte = function(qte)
+    {
+      this.qteArticle += qte;
+    }
+    this.getPrixLigne = function()
+    {
+      var resultat = this.prixArticle * this.qteArticle;
+      return resultat;
+    }
+    this.getCode = function()
+    {
+      return this.codeArticle;
+    }
+  }
+  // fonction creation du tableau
+  function Panier()
+  {
+    this.liste = [];
+    this.ajouterArticle = function(code, qte, prix)
+    {
+      var index = this.getArticle(code);
+      if (index == -1) this.liste.push(new LignePanier(code, qte, prix));
+      else this.liste[index].ajouterQte(qte);
+    }
+    this.getPrixPanier = function()
+    {
+      var total = 0;
+      for(var i = 0 ; i < this.liste.length ; i++)
+      total += this.liste[i].getPrixLigne();
+      return total;
+    }
+    this.getArticle = function(code)
+    {
+      for(var i = 0 ; i <this.liste.length ; i++)
+      if (code == this.liste[i].getCode()) return i;
+      return -1;
+    }
+    this.supprimerArticle = function(code)
+    {
+      var index = this.getArticle(code);
+      if (index > -1) this.liste.splice(index, 1);
+    }
+  }
+  // fonction ajouter un tableau
+  function ajouter()
+  {
+    var code = parseInt(document.getElementById("id").value);
+    var qte = parseInt(document.getElementById("qte").value);
+    var prix = parseInt(document.getElementById("prix").value);
+    var monPanier = new Panier();
+    monPanier.ajouterArticle(code, qte, prix);
+    var tableau = document.getElementById("tableau");
+    var longueurTab = parseInt(document.getElementById("nbreLignes").innerHTML);
+    if (longueurTab > 0)
+    {
+      for(var i = longueurTab ; i > 0  ; i--)
+      {
+        monPanier.ajouterArticle(parseInt(tableau.rows[i].cells[0].innerHTML), parseInt(tableau.rows[i].cells[1].innerHTML), parseInt(tableau.rows[i].cells[2].innerHTML));
+        tableau.deleteRow(i);
+      }
+    }
+    var longueur = monPanier.liste.length;
+    for(var i = 0 ; i < longueur ; i++)
+    {
+      var ligne = monPanier.liste[i];
+      var ligneTableau = tableau.insertRow(-1);
+      var colonne1 = ligneTableau.insertCell(0);
+      colonne1.innerHTML += ligne.getCode();
+      var colonne2 = ligneTableau.insertCell(1);
+      colonne2.innerHTML += ligne.qteArticle;
+      var colonne3 = ligneTableau.insertCell(2);
+      colonne3.innerHTML += ligne.prixArticle;
+      var colonne4 = ligneTableau.insertCell(3);
+      colonne4.innerHTML += ligne.getPrixLigne();
+      var colonne5 = ligneTableau.insertCell(4);
+      colonne5.innerHTML += "<button class=\"btn btn-primary\" type=\"submit\" onclick=\"supprimer(this.parentNode.parentNode.cells[0].innerHTML)\"><span class=\"glyphicon glyphicon-remove\"></span> Retirer</button>";
+    }
+    document.getElementById("prixTotal").innerHTML = monPanier.getPrixPanier();
+    document.getElementById("nbreLignes").innerHTML = longueur;
+  }
+  // fonction supprimer tableau
+  function supprimer(code)
+  {
+    var monPanier = new Panier();
+    var tableau = document.getElementById("tableau");
+    var longueurTab = parseInt(document.getElementById("nbreLignes").innerHTML);
+    if (longueurTab > 0)
+    {
+      for(var i = longueurTab ; i > 0  ; i--)
+      {
+        monPanier.ajouterArticle(parseInt(tableau.rows[i].cells[0].innerHTML), parseInt(tableau.rows[i].cells[1].innerHTML), parseInt(tableau.rows[i].cells[2].innerHTML));
+        tableau.deleteRow(i);
+      }
+    }
+    monPanier.supprimerArticle(code);
+    var longueur = monPanier.liste.length;
+    for(var i = 0 ; i < longueur ; i++)
+    {
+      var ligne = monPanier.liste[i];
+      var ligneTableau = tableau.insertRow(-1);
+      var colonne1 = ligneTableau.insertCell(0);
+      colonne1.innerHTML += ligne.getCode();
+      var colonne2 = ligneTableau.insertCell(1);
+      colonne2.innerHTML += ligne.qteArticle;
+      var colonne3 = ligneTableau.insertCell(2);
+      colonne3.innerHTML += ligne.prixArticle;
+      var colonne4 = ligneTableau.insertCell(3);
+      colonne4.innerHTML += ligne.getPrixLigne();
+      var colonne5 = ligneTableau.insertCell(4);
+      colonne5.innerHTML += "<button class=\"btn btn-primary\" type=\"submit\" onclick=\"supprimer(this.parentNode.parentNode.cells[0].innerHTML)\"><span class=\"glyphicon glyphicon-remove\"></span> Retirer</button>";
+    }
+    document.getElementById("prixTotal").innerHTML = monPanier.getPrixPanier();
+    document.getElementById("nbreLignes").innerHTML = longueur;
+  }
+  </script>
 </body>
 </html>
