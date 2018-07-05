@@ -8,43 +8,44 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
   <script src="assets/js/jquery-3.2.1.js"></script>
-  <script type="assets/js/script.js"></script>
+  <script src="assets/js/script.js"></script>
   <link rel="stylesheet" href="assets/css/style.css" />
   <title>E-commerce Projet</title>
 </head>
 <body>
   <div class="container-fluid w-75">
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="navbar-brand" href="#">Nom du site</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="#test1">Bandes Dessinées</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="#test2">Manga</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="#test3">Sciences-Fiction</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="#test4">Romans</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="#test5">Ebooks</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="#test6">Cuisine</a>
-          </li>
-        </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
-      </div>
-    </nav>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="navbar-brand" href="#">Nom du site</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="#ref">Bandes Dessinées</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="#test2">Manga</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="#test3">Sciences-Fiction</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="#test4">Romans</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="#test5">Ebooks</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="#test6">Cuisine</a>
+              </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+
+          </div>
+        </nav>
     <!--carousel-->
     <div id="carousel" class="carousel slide mt-5" data-ride="carousel">
       <!-- Indicators -->
@@ -76,8 +77,9 @@
     <div id="accordion">
       <div class="card">
         <div class="card-header">
-          <a class="card-link" data-toggle="collapse" href="#collapseOne">
-            <img src="assets/img/image-bd.png" class="imageSection mt-4"/>
+          <a class="card-link" data-toggle="collapse" href="#collapseOne" id="ref">
+            <img src="assets/img/image-bd.png" class="imageSection mt-4" id="ref"/>
+            <h2 id="ref"></h2>
           </a>
         </div>
         <div id="collapseOne" class="collapse" data-parent="#accordion">
@@ -174,8 +176,9 @@
       </div>
       <div class="card">
         <div class="card-header">
-          <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
-            <img src="assets/img/image-manga.png" class="imageSection mt-3" />
+          <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo" id="test2">
+            <img src="assets/img/image-manga.png" class="imageSection mt-3" id="test2"/>
+            <h2 id="test2"></h2>
           </a>
         </div>
         <div id="collapseTwo" class="collapse" data-parent="#accordion">
@@ -272,8 +275,9 @@
       </div>
       <div class="card">
         <div class="card-header">
-          <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
-            <img src="assets/img/image-sf.png" class="imageSection mt-3"/>
+          <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree" id="test3">
+            <img src="assets/img/image-sf.png" class="imageSection mt-3" id="test3"/>
+            <h2 id="test3"></h2>
           </a>
         </div>
         <div id="collapseThree" class="collapse" data-parent="#accordion">
@@ -370,8 +374,9 @@
       </div>
       <div class="card">
         <div class="card-header">
-          <a class="card-link" data-toggle="collapse" href="#collapsefour">
-            <img src="assets/img/image-roman.png" class="imageSection mt-3"/>
+          <a class="card-link" data-toggle="collapse" href="#collapsefour" id="test4">
+            <img src="assets/img/image-roman.png" class="imageSection mt-3" id="test4"/>
+            <h2 id="test4"></h2>
           </a>
         </div>
         <div id="collapsefour" class="collapse " data-parent="#accordion">
@@ -468,8 +473,9 @@
       </div>
       <div class="card">
         <div class="card-header">
-          <a class="card-link" data-toggle="collapse" href="#collapsefive">
-            <img src="assets/img/image-ebook.png" class="imageSection mt-3"/>
+          <a class="card-link" data-toggle="collapse" href="#collapsefive" id="test5">
+            <img src="assets/img/image-ebook.png" class="imageSection mt-3" id="test5"/>
+            <h2 id="test5"></h2>
           </a>
         </div>
         <div id="collapsefive" class="collapse " data-parent="#accordion">
@@ -566,8 +572,9 @@
       </div>
       <div class="card">
         <div class="card-header">
-          <a class="card-link" data-toggle="collapse" href="#collapsesix">
-            <img src="assets/img/image-cuisine.png" class="imageSection mt-3"/>
+          <a class="card-link" data-toggle="collapse" href="#collapsesix" id="test6">
+            <img src="assets/img/image-cuisine.png" class="imageSection mt-3" id="test6"/>
+            <h2 id="test6"></h2>
           </a>
         </div>
         <div id="collapsesix" class="collapse" data-parent="#accordion">
@@ -664,5 +671,6 @@
       </div>
     </div>
   </div>
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 </body>
 </html>
