@@ -14,26 +14,29 @@
 </head>
 <body>
   <div class="container-fluid w-75">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#collapseOne">Bande Dessinée</a>
+            <a class="navbar-brand" href="#">Nom du site</a>
           </li>
           <li class="nav-item active">
-            <a class="nav-link" href="#collapseTwo">Manga</a>
+            <a class="nav-link" href="#test1">Bandes Dessinées</a>
           </li>
           <li class="nav-item active">
-            <a class="nav-link" href="#collapseThree">Science</a>
+            <a class="nav-link" href="#test2">Manga</a>
           </li>
           <li class="nav-item active">
-            <a class="nav-link" href="#collapsefour">Romans</a>
+            <a class="nav-link" href="#test3">Sciences-Fiction</a>
           </li>
           <li class="nav-item active">
-            <a class="nav-link" href="#collapsefive">Ebooks</a>
+            <a class="nav-link" href="#test4">Romans</a>
           </li>
           <li class="nav-item active">
-            <a class="nav-link" href="#collapsesix">cuisine</a>
+            <a class="nav-link" href="#test5">Ebooks</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#test6">Cuisine</a>
           </li>
         </ul>
         <form class="form-inline my-2 my-lg-0">
@@ -43,7 +46,7 @@
       </div>
     </nav>
     <!--carousel-->
-    <div id="carousel" class="carousel slide" data-ride="carousel">
+    <div id="carousel" class="carousel slide mt-5" data-ride="carousel">
       <!-- Indicators -->
       <div class="carousel-indicators">
         <span data-target="#carousel" data-slide-to="0" class="dot active"></span>
@@ -53,13 +56,13 @@
       <!-- The slideshow -->
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="assets/img/imageCarousel1.jpg" alt="" width="100%" height="500">
+          <img src="assets/img/imageCarousel1.jpg" alt="" class="carouselImage">
         </div>
         <div class="carousel-item">
-          <img src="assets/img/imageCarousel2.jpg" alt="" width="100%" height="500">
+          <img src="assets/img/imageCarousel2.jpg" alt="" class="carouselImage">
         </div>
         <div class="carousel-item">
-          <img src="assets/img/imageCarousel1.jpg" alt="" width="100%" height="500">
+          <img src="assets/img/imageCarousel1.jpg" alt="" class="carouselImage">
         </div>
       </div>
       <!-- Left and right controls -->
@@ -74,15 +77,51 @@
       <div class="card">
         <div class="card-header">
           <a class="card-link" data-toggle="collapse" href="#collapseOne">
-            <h2 class="text-center">Bande Dessinée</h2>
+            <img src="assets/img/image-bd.png" class="imageSection mt-4"/>
           </a>
         </div>
         <div id="collapseOne" class="collapse" data-parent="#accordion">
           <div class="card-body">
             <div class="elementContainer">
-              <img src="assets/img/Le-livre-de-Salomon.jpg" alt="" class="elementImage">
+              <img src="assets/img/imagebd1.jpg" alt="" class="elementImage">
               <div class="elementDescription">
-                <h3 class="text-center">Le livre de Salomon</h3>
+                <h3 class="text-center">The walking dead</h3>
+                <p class="my-2 mx-4 text-center">Lorem ipsum dolor sit amet, consectetur
+                  adipisicing elit, sed do eiusmod tempor incididunt
+                  ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                </p>
+              </div>
+              <div class="elementPrice text-center">
+                <h4>21,00 €</h4>
+                <input class="mt-2 articleAmount" type="number" name="" value="0" />
+                <a href="#"><img src="assets/img/addToCart.svg" alt=""></a>
+              </div>
+            </div>
+          </div>
+          <hr />
+          <div class="card-body">
+            <div class="elementContainer">
+              <img src="assets/img/imagebd2.jpg" alt="" class="elementImage">
+              <div class="elementDescription">
+                <h3 class="text-center">Aquaman</h3>
+                <p class="my-2 mx-4 text-center">Lorem ipsum dolor sit amet, consectetur
+                  adipisicing elit, sed do eiusmod tempor incididunt
+                  ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                </p>
+              </div>
+              <div class="elementPrice text-center">
+                <h4>20,99 €</h4>
+                <input class="mt-2 articleAmount" type="number" name="" value="0" />
+                <a href="#"><img src="assets/img/addToCart.svg" alt=""></a>
+              </div>
+            </div>
+          </div>
+          <hr />
+          <div class="card-body">
+            <div class="elementContainer">
+              <img src="assets/img/imagebd3.jpg" alt="" class="elementImage">
+              <div class="elementDescription">
+                <h3 class="text-center">Harley Quinn</h3>
                 <p class="my-2 mx-4 text-center">Lorem ipsum dolor sit amet, consectetur
                   adipisicing elit, sed do eiusmod tempor incididunt
                   ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -98,16 +137,16 @@
           <hr />
           <div class="card-body">
             <div class="elementContainer">
-              <img src="assets/img/Le-livre-de-Salomon.jpg" alt="" class="elementImage">
+              <img src="assets/img/imagebd4.jpg" alt="" class="elementImage">
               <div class="elementDescription">
-                <h3 class="text-center">Le livre de Salomon</h3>
+                <h3 class="text-center">Flash</h3>
                 <p class="my-2 mx-4 text-center">Lorem ipsum dolor sit amet, consectetur
                   adipisicing elit, sed do eiusmod tempor incididunt
                   ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                 </p>
               </div>
               <div class="elementPrice text-center">
-                <h4>19,99 €</h4>
+                <h4>15,99 €</h4>
                 <input class="mt-2 articleAmount" type="number" name="" value="0" />
                 <a href="#"><img src="assets/img/addToCart.svg" alt=""></a>
               </div>
@@ -116,52 +155,16 @@
           <hr />
           <div class="card-body">
             <div class="elementContainer">
-              <img src="assets/img/Le-livre-de-Salomon.jpg" alt="" class="elementImage">
+              <img src="assets/img/imagebd5.jpg" alt="" class="elementImage">
               <div class="elementDescription">
-                <h3 class="text-center">Le livre de Salomon</h3>
+                <h3 class="text-center">Asterix et Cleopatre</h3>
                 <p class="my-2 mx-4 text-center">Lorem ipsum dolor sit amet, consectetur
                   adipisicing elit, sed do eiusmod tempor incididunt
                   ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                 </p>
               </div>
               <div class="elementPrice text-center">
-                <h4>19,99 €</h4>
-                <input class="mt-2 articleAmount" type="number" name="" value="0" />
-                <a href="#"><img src="assets/img/addToCart.svg" alt=""></a>
-              </div>
-            </div>
-          </div>
-          <hr />
-          <div class="card-body">
-            <div class="elementContainer">
-              <img src="assets/img/Le-livre-de-Salomon.jpg" alt="" class="elementImage">
-              <div class="elementDescription">
-                <h3 class="text-center">Le livre de Salomon</h3>
-                <p class="my-2 mx-4 text-center">Lorem ipsum dolor sit amet, consectetur
-                  adipisicing elit, sed do eiusmod tempor incididunt
-                  ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                </p>
-              </div>
-              <div class="elementPrice text-center">
-                <h4>19,99 €</h4>
-                <input class="mt-2 articleAmount" type="number" name="" value="0" />
-                <a href="#"><img src="assets/img/addToCart.svg" alt=""></a>
-              </div>
-            </div>
-          </div>
-          <hr />
-          <div class="card-body">
-            <div class="elementContainer">
-              <img src="assets/img/Le-livre-de-Salomon.jpg" alt="" class="elementImage">
-              <div class="elementDescription">
-                <h3 class="text-center">Le livre de Salomon</h3>
-                <p class="my-2 mx-4 text-center">Lorem ipsum dolor sit amet, consectetur
-                  adipisicing elit, sed do eiusmod tempor incididunt
-                  ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                </p>
-              </div>
-              <div class="elementPrice text-center">
-                <h4>19,99 €</h4>
+                <h4>10,00 €</h4>
                 <input class="mt-2 articleAmount" type="number" name="" value="0" />
                 <a href="#"><img src="assets/img/addToCart.svg" alt=""></a>
               </div>
@@ -172,7 +175,7 @@
       <div class="card">
         <div class="card-header">
           <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
-            <h2 class="text-center">Manga</h2>
+            <img src="assets/img/image-manga.png" class="imageSection mt-3" />
           </a>
         </div>
         <div id="collapseTwo" class="collapse" data-parent="#accordion">
@@ -180,14 +183,14 @@
             <div class="elementContainer">
               <img src="assets/img/image1.jpg" alt="" class="elementImage">
               <div class="elementDescription">
-                <h3 class="text-center">Le livre de Salomon</h3>
+                <h3 class="text-center">Log Horizon tome1</h3>
                 <p class="my-2 mx-4 text-center">Lorem ipsum dolor sit amet, consectetur
                   adipisicing elit, sed do eiusmod tempor incididunt
                   ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                 </p>
               </div>
               <div class="elementPrice text-center">
-                <h4>19,99 €</h4>
+                <h4>7,99 €</h4>
                 <input class="mt-2 articleAmount" type="number" name="" value="0" />
                 <a href="#"><img src="assets/img/addToCart.svg" alt=""></a>
               </div>
@@ -198,14 +201,14 @@
             <div class="elementContainer">
               <img src="assets/img/image2.jpg" alt="" class="elementImage">
               <div class="elementDescription">
-                <h3 class="text-center">Le livre de Salomon</h3>
+                <h3 class="text-center">Accel World tome6</h3>
                 <p class="my-2 mx-4 text-center">Lorem ipsum dolor sit amet, consectetur
                   adipisicing elit, sed do eiusmod tempor incididunt
                   ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                 </p>
               </div>
               <div class="elementPrice text-center">
-                <h4>19,99 €</h4>
+                <h4>8,99 €</h4>
                 <input class="mt-2 articleAmount" type="number" name="" value="0" />
                 <a href="#"><img src="assets/img/addToCart.svg" alt=""></a>
               </div>
@@ -216,14 +219,14 @@
             <div class="elementContainer">
               <img src="assets/img/image3.jpg" alt="" class="elementImage">
               <div class="elementDescription">
-                <h3 class="text-center">Le livre de Salomon</h3>
+                <h3 class="text-center">Freezing tome11</h3>
                 <p class="my-2 mx-4 text-center">Lorem ipsum dolor sit amet, consectetur
                   adipisicing elit, sed do eiusmod tempor incididunt
                   ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                 </p>
               </div>
               <div class="elementPrice text-center">
-                <h4>19,99 €</h4>
+                <h4>7,99 €</h4>
                 <input class="mt-2 articleAmount" type="number" name="" value="0" />
                 <a href="#"><img src="assets/img/addToCart.svg" alt=""></a>
               </div>
@@ -234,14 +237,14 @@
             <div class="elementContainer">
               <img src="assets/img/image4.jpg" alt="" class="elementImage">
               <div class="elementDescription">
-                <h3 class="text-center">Le livre de Salomon</h3>
+                <h3 class="text-center">Highschool of the dead tome1</h3>
                 <p class="my-2 mx-4 text-center">Lorem ipsum dolor sit amet, consectetur
                   adipisicing elit, sed do eiusmod tempor incididunt
                   ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                 </p>
               </div>
               <div class="elementPrice text-center">
-                <h4>19,99 €</h4>
+                <h4>12,99 €</h4>
                 <input class="mt-2 articleAmount" type="number" name="" value="0" />
                 <a href="#"><img src="assets/img/addToCart.svg" alt=""></a>
               </div>
@@ -252,14 +255,14 @@
             <div class="elementContainer">
               <img src="assets/img/image5.jpg" alt="" class="elementImage">
               <div class="elementDescription">
-                <h3 class="text-center">Le livre de Salomon</h3>
+                <h3 class="text-center">Darling in the franxx tome1</h3>
                 <p class="my-2 mx-4 text-center">Lorem ipsum dolor sit amet, consectetur
                   adipisicing elit, sed do eiusmod tempor incididunt
                   ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                 </p>
               </div>
               <div class="elementPrice text-center">
-                <h4>19,99 €</h4>
+                <h4>10,99 €</h4>
                 <input class="mt-2 articleAmount" type="number" name="" value="0" />
                 <a href="#"><img src="assets/img/addToCart.svg" alt=""></a>
               </div>
@@ -270,22 +273,22 @@
       <div class="card">
         <div class="card-header">
           <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
-            <h2 class="text-center">Science-Fiction</h2>
+            <img src="assets/img/image-sf.png" class="imageSection mt-3"/>
           </a>
         </div>
         <div id="collapseThree" class="collapse" data-parent="#accordion">
           <div class="card-body">
             <div class="elementContainer">
-              <img src="assets/img/Le-livre-de-Salomon.jpg" alt="" class="elementImage">
+              <img src="assets/img/imagesf1.jpg" alt="" class="elementImage">
               <div class="elementDescription">
-                <h3 class="text-center">Le livre de Salomon</h3>
+                <h3 class="text-center">Bilbo le Hobbit</h3>
                 <p class="my-2 mx-4 text-center">Lorem ipsum dolor sit amet, consectetur
                   adipisicing elit, sed do eiusmod tempor incididunt
                   ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                 </p>
               </div>
               <div class="elementPrice text-center">
-                <h4>19,99 €</h4>
+                <h4>16,99 €</h4>
                 <input class="mt-2 articleAmount" type="number" name="number" value="0" />
                 <a href="#"><img src="assets/img/addToCart.svg" alt=""></a>
               </div>
@@ -294,16 +297,16 @@
           <hr />
           <div class="card-body">
             <div class="elementContainer">
-              <img src="assets/img/Le-livre-de-Salomon.jpg" alt="" class="elementImage">
+              <img src="assets/img/imagesf2.jpg" alt="" class="elementImage">
               <div class="elementDescription">
-                <h3 class="text-center">Le livre de Salomon</h3>
+                <h3 class="text-center">Percy Jackson le voleur de foudre</h3>
                 <p class="my-2 mx-4 text-center">Lorem ipsum dolor sit amet, consectetur
                   adipisicing elit, sed do eiusmod tempor incididunt
                   ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                 </p>
               </div>
               <div class="elementPrice text-center">
-                <h4>19,99 €</h4>
+                <h4>17,99 €</h4>
                 <input class="mt-2 articleAmount" type="number" name="" value="0" />
                 <a href="#"><img src="assets/img/addToCart.svg" alt=""></a>
               </div>
@@ -312,16 +315,16 @@
           <hr />
           <div class="card-body">
             <div class="elementContainer">
-              <img src="assets/img/Le-livre-de-Salomon.jpg" alt="" class="elementImage">
+              <img src="assets/img/imagesf3.jpg" alt="" class="elementImage">
               <div class="elementDescription">
-                <h3 class="text-center">Le livre de Salomon</h3>
+                <h3 class="text-center">Les chevaliers D'emeraude tome1</h3>
                 <p class="my-2 mx-4 text-center">Lorem ipsum dolor sit amet, consectetur
                   adipisicing elit, sed do eiusmod tempor incididunt
                   ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                 </p>
               </div>
               <div class="elementPrice text-center">
-                <h4>19,99 €</h4>
+                <h4>14,99 €</h4>
                 <input class="mt-2 articleAmount" type="number" name="" value="0" />
                 <a href="#"><img src="assets/img/addToCart.svg" alt=""></a>
               </div>
@@ -330,16 +333,16 @@
           <hr />
           <div class="card-body">
             <div class="elementContainer">
-              <img src="assets/img/Le-livre-de-Salomon.jpg" alt="" class="elementImage">
+              <img src="assets/img/imagesf4.jpg" alt="" class="elementImage">
               <div class="elementDescription">
-                <h3 class="text-center">Le livre de Salomon</h3>
+                <h3 class="text-center">harry potter et l'ordre du phenix</h3>
                 <p class="my-2 mx-4 text-center">Lorem ipsum dolor sit amet, consectetur
                   adipisicing elit, sed do eiusmod tempor incididunt
                   ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                 </p>
               </div>
               <div class="elementPrice text-center">
-                <h4>19,99 €</h4>
+                <h4>20,00 €</h4>
                 <input class="mt-2 articleAmount" type="number" name="" value="0" />
                 <a href="#"><img src="assets/img/addToCart.svg" alt=""></a>
               </div>
@@ -348,16 +351,16 @@
           <hr />
           <div class="card-body">
             <div class="elementContainer">
-              <img src="assets/img/Le-livre-de-Salomon.jpg" alt="" class="elementImage">
+              <img src="assets/img/imagesf5.jpg" alt="" class="elementImage">
               <div class="elementDescription">
-                <h3 class="text-center">Le livre de Salomon</h3>
+                <h3 class="text-center">Divergente tome1</h3>
                 <p class="my-2 mx-4 text-center">Lorem ipsum dolor sit amet, consectetur
                   adipisicing elit, sed do eiusmod tempor incididunt
                   ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                 </p>
               </div>
               <div class="elementPrice text-center">
-                <h4>19,99 €</h4>
+                <h4>12,99 €</h4>
                 <input class="mt-2 articleAmount" type="number" name="" value="0" />
                 <a href="#"><img src="assets/img/addToCart.svg" alt=""></a>
               </div>
@@ -368,22 +371,22 @@
       <div class="card">
         <div class="card-header">
           <a class="card-link" data-toggle="collapse" href="#collapsefour">
-            <h2 class="text-center">Romans</h2>
+            <img src="assets/img/image-roman.png" class="imageSection mt-3"/>
           </a>
         </div>
         <div id="collapsefour" class="collapse " data-parent="#accordion">
           <div class="card-body">
             <div class="elementContainer">
-              <img src="assets/img/Le-livre-de-Salomon.jpg" alt="" class="elementImage">
+              <img src="assets/img/imager1.jpg" alt="" class="elementImage">
               <div class="elementDescription">
-                <h3 class="text-center">Le livre de Salomon</h3>
+                <h3 class="text-center">Carnets noirs</h3>
                 <p class="my-2 mx-4 text-center">Lorem ipsum dolor sit amet, consectetur
                   adipisicing elit, sed do eiusmod tempor incididunt
                   ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                 </p>
               </div>
               <div class="elementPrice text-center">
-                <h4>19,99 €</h4>
+                <h4>21.99 €</h4>
                 <input class="mt-2 articleAmount" type="number" name="" value="0" />
                 <a href="#"><img src="assets/img/addToCart.svg" alt=""></a>
               </div>
@@ -392,16 +395,16 @@
           <hr />
           <div class="card-body">
             <div class="elementContainer">
-              <img src="assets/img/Le-livre-de-Salomon.jpg" alt="" class="elementImage">
+              <img src="assets/img/imager2.jpg" alt="" class="elementImage">
               <div class="elementDescription" >
-                <h3 class="text-center">Le livre de Salomon</h3>
+                <h3 class="text-center">Le Labyrinthe tome1</h3>
                 <p class="my-2 mx-4 text-center">Lorem ipsum dolor sit amet, consectetur
                   adipisicing elit, sed do eiusmod tempor incididunt
                   ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                 </p>
               </div>
               <div class="elementPrice text-center">
-                <h4>19,99 €</h4>
+                <h4>22,99 €</h4>
                 <input class="mt-2 articleAmount" type="number" name="" value="0" />
                 <a href="#"><img src="assets/img/addToCart.svg" alt=""></a>
               </div>
@@ -410,16 +413,16 @@
           <hr />
           <div class="card-body">
             <div class="elementContainer">
-              <img src="assets/img/Le-livre-de-Salomon.jpg" alt="" class="elementImage">
+              <img src="assets/img/imager3.jpg" alt="" class="elementImage">
               <div class="elementDescription">
-                <h3 class="text-center">Le livre de Salomon</h3>
+                <h3 class="text-center">Rouge Rubis</h3>
                 <p class="my-2 mx-4 text-center">Lorem ipsum dolor sit amet, consectetur
                   adipisicing elit, sed do eiusmod tempor incididunt
                   ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                 </p>
               </div>
               <div class="elementPrice text-center">
-                <h4>19,99 €</h4>
+                <h4>11,99 €</h4>
                 <input class="mt-2 articleAmount" type="number" name="" value="0" />
                 <a href="#"><img src="assets/img/addToCart.svg" alt=""></a>
               </div>
@@ -428,16 +431,16 @@
           <hr />
           <div class="card-body">
             <div class="elementContainer">
-              <img src="assets/img/Le-livre-de-Salomon.jpg" alt="" class="elementImage">
+              <img src="assets/img/imager4.jpg" alt="" class="elementImage">
               <div class="elementDescription">
-                <h3 class="text-center">Le livre de Salomon</h3>
+                <h3 class="text-center">Hunger game</h3>
                 <p class="my-2 mx-4 text-center">Lorem ipsum dolor sit amet, consectetur
                   adipisicing elit, sed do eiusmod tempor incididunt
                   ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                 </p>
               </div>
               <div class="elementPrice text-center">
-                <h4>19,99 €</h4>
+                <h4>24 €</h4>
                 <input class="mt-2 articleAmount" type="number" name="" value="0" />
                 <a href="#"><img src="assets/img/addToCart.svg" alt=""></a>
               </div>
@@ -446,16 +449,16 @@
           <hr />
           <div class="card-body">
             <div class="elementContainer">
-              <img src="assets/img/Le-livre-de-Salomon.jpg" alt="" class="elementImage">
+              <img src="assets/img/imager5.jpg" alt="" class="elementImage">
               <div class="elementDescription">
-                <h3 class="text-center">Le livre de Salomon</h3>
+                <h3 class="text-center">Bleu Saphir</h3>
                 <p class="my-2 mx-4 text-center">Lorem ipsum dolor sit amet, consectetur
                   adipisicing elit, sed do eiusmod tempor incididunt
                   ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                 </p>
               </div>
               <div class="elementPrice text-center">
-                <h4>19,99 €</h4>
+                <h4>11,99 €</h4>
                 <input class="mt-2 articleAmount" type="number" name="" value="0" />
                 <a href="#"><img src="assets/img/addToCart.svg" alt=""></a>
               </div>
@@ -466,7 +469,7 @@
       <div class="card">
         <div class="card-header">
           <a class="card-link" data-toggle="collapse" href="#collapsefive">
-            <h2 class="text-center">Ebooks</h2>
+            <img src="assets/img/image-ebook.png" class="imageSection mt-3"/>
           </a>
         </div>
         <div id="collapsefive" class="collapse " data-parent="#accordion">
@@ -490,7 +493,7 @@
           <hr />
           <div class="card-body">
             <div class="elementContainer">
-              <img src="assets/img/Le-livre-de-Salomon.jpg" alt="" class="elementImage">
+              <img src="assets/img/imageEB1.jpg" alt="" class="elementImage">
               <div class="elementDescription" >
                 <h3 class="text-center">Le livre de Salomon</h3>
                 <p class="my-2 mx-4 text-center">Lorem ipsum dolor sit amet, consectetur
@@ -508,7 +511,7 @@
           <hr />
           <div class="card-body">
             <div class="elementContainer">
-              <img src="assets/img/Le-livre-de-Salomon.jpg" alt="" class="elementImage">
+              <img src="assets/img/imageEB2.jpg" alt="" class="elementImage">
               <div class="elementDescription">
                 <h3 class="text-center">Le livre de Salomon</h3>
                 <p class="my-2 mx-4 text-center">Lorem ipsum dolor sit amet, consectetur
@@ -526,7 +529,7 @@
           <hr />
           <div class="card-body">
             <div class="elementContainer">
-              <img src="assets/img/Le-livre-de-Salomon.jpg" alt="" class="elementImage">
+              <img src="assets/img/imageEB3.jpg" alt="" class="elementImage">
               <div class="elementDescription">
                 <h3 class="text-center">Le livre de Salomon</h3>
                 <p class="my-2 mx-4 text-center">Lorem ipsum dolor sit amet, consectetur
@@ -544,7 +547,7 @@
           <hr />
           <div class="card-body">
             <div class="elementContainer">
-              <img src="assets/img/Le-livre-de-Salomon.jpg" alt="" class="elementImage">
+              <img src="assets/img/imageEB4.jpg" alt="" class="elementImage">
               <div class="elementDescription">
                 <h3 class="text-center">Le livre de Salomon</h3>
                 <p class="my-2 mx-4 text-center">Lorem ipsum dolor sit amet, consectetur
@@ -564,22 +567,22 @@
       <div class="card">
         <div class="card-header">
           <a class="card-link" data-toggle="collapse" href="#collapsesix">
-            <h2 class="text-center">cuisine</h2>
+            <img src="assets/img/image-cuisine.png" class="imageSection mt-3"/>
           </a>
         </div>
         <div id="collapsesix" class="collapse" data-parent="#accordion">
           <div class="card-body">
             <div class="elementContainer">
-              <img src="assets/img/Le-livre-de-Salomon.jpg" alt="" class="elementImage">
+              <img src="assets/img/imagec1.jpg" alt="" class="elementImage">
               <div class="elementDescription">
-                <h3 class="text-center">Le livre de Salomon</h3>
+                <h3 class="text-center">Recette de tapas</h3>
                 <p class="my-2 mx-4 text-center">Lorem ipsum dolor sit amet, consectetur
                   adipisicing elit, sed do eiusmod tempor incididunt
                   ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                 </p>
               </div>
               <div class="elementPrice text-center">
-                <h4>19,99 €</h4>
+                <h4>10,99 €</h4>
                 <input class="mt-2 articleAmount" type="number" name="number" value="0" />
                 <a href="#"><img src="assets/img/addToCart.svg" alt=""></a>
               </div>
@@ -588,16 +591,16 @@
           <hr />
           <div class="card-body">
             <div class="elementContainer">
-              <img src="assets/img/Le-livre-de-Salomon.jpg" alt="" class="elementImage">
+              <img src="assets/img/imagec2.jpg" alt="" class="elementImage">
               <div class="elementDescription" >
-                <h3 class="text-center">Le livre de Salomon</h3>
+                <h3 class="text-center">Recette de gateaux</h3>
                 <p class="my-2 mx-4 text-center">Lorem ipsum dolor sit amet, consectetur
                   adipisicing elit, sed do eiusmod tempor incididunt
                   ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                 </p>
               </div>
               <div class="elementPrice text-center">
-                <h4>19,99 €</h4>
+                <h4>11,99 €</h4>
                 <input class="mt-2 articleAmount" type="number" name="" value="0" />
                 <a href="#"><img src="assets/img/addToCart.svg" alt=""></a>
               </div>
@@ -606,16 +609,16 @@
           <hr />
           <div class="card-body">
             <div class="elementContainer">
-              <img src="assets/img/Le-livre-de-Salomon.jpg" alt="" class="elementImage">
+              <img src="assets/img/imagec3.jpg" alt="" class="elementImage">
               <div class="elementDescription">
-                <h3 class="text-center">Le livre de Salomon</h3>
+                <h3 class="text-center">Recette de pizza</h3>
                 <p class="my-2 mx-4 text-center">Lorem ipsum dolor sit amet, consectetur
                   adipisicing elit, sed do eiusmod tempor incididunt
                   ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                 </p>
               </div>
               <div class="elementPrice text-center">
-                <h4>19,99 €</h4>
+                <h4>12,99 €</h4>
                 <input class="mt-2 articleAmount" type="number" name="" value="0" />
                 <a href="#"><img src="assets/img/addToCart.svg" alt=""></a>
               </div>
@@ -624,16 +627,16 @@
           <hr />
           <div class="card-body">
             <div class="elementContainer">
-              <img src="assets/img/Le-livre-de-Salomon.jpg" alt="" class="elementImage">
+              <img src="assets/img/imagec4.jpg" alt="" class="elementImage">
               <div class="elementDescription">
-                <h3 class="text-center">Le livre de Salomon</h3>
+                <h3 class="text-center">Bar à salades</h3>
                 <p class="my-2 mx-4 text-center">Lorem ipsum dolor sit amet, consectetur
                   adipisicing elit, sed do eiusmod tempor incididunt
                   ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                 </p>
               </div>
               <div class="elementPrice text-center">
-                <h4>19,99 €</h4>
+                <h4>6,99 €</h4>
                 <input class="mt-2 articleAmount" type="number" name="" value="0" />
                 <a href="#"><img src="assets/img/addToCart.svg" alt=""></a>
               </div>
@@ -642,16 +645,16 @@
           <hr />
           <div class="card-body">
             <div class="elementContainer">
-              <img src="assets/img/Le-livre-de-Salomon.jpg" alt="" class="elementImage">
+              <img src="assets/img/imagec5.jpg" alt="" class="elementImage">
               <div class="elementDescription">
-                <h3 class="text-center">Le livre de Salomon</h3>
+                <h3 class="text-center">Tarte de Fête</h3>
                 <p class="my-2 mx-4 text-center">Lorem ipsum dolor sit amet, consectetur
                   adipisicing elit, sed do eiusmod tempor incididunt
                   ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                 </p>
               </div>
               <div class="elementPrice text-center">
-                <h4>19,99 €</h4>
+                <h4>7,99 €</h4>
                 <input class="mt-2 articleAmount" type="number" name="" value="0" />
                 <a href="#"><img src="assets/img/addToCart.svg" alt=""></a>
               </div>
